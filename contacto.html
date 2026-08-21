@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Navegando con Ari</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/matrix.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    
+    <div class="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+   
+    <div class="matrix-bg" id="matrixBg"></div>
+
+    
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="logo">Navegando con Ari</a>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" class="nav-link">Inicio</a></li>
+            <li><a href="proyectos.html" class="nav-link">Proyectos</a></li>
+            <li><a href="certificaciones.html" class="nav-link">Certificaciones</a></li>
+            <li><a href="biografia.html" class="nav-link">Biografía</a></li>
+            <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+
+    <main class="main-content">
+        <section class="section">
+            <h2 class="section-title">Contacto</h2>
+            <p class="section-subtitle">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-method">
+                        <span class="contact-icon">📧</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p>ariadnasalazar52@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <span class="contact-icon">💼</span>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p>www.linkedin.com/in/ariadna-salazar-cruz-a2bb49258</p>
+                        </div>
+
+                    </div>
+                    <div class="contact-method">
+                        <span class="contact-icon">📱</span>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p>https://github.com/ariadnasalazar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="asunto">Asunto</label>
+                            <input type="text" id="asunto" name="asunto" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button submit-button">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/matrix.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
