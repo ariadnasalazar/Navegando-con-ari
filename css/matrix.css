@@ -1,0 +1,106 @@
+.matrix-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.05;
+    overflow: hidden;
+}
+
+.matrix-rain {
+    position: absolute;
+    color: #00ff41;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    animation: matrixFall 20s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes matrixFall {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+
+.glow-blue {
+    box-shadow: 0 0 20px rgba(0, 102, 255, 0.3);
+}
+
+.glow-cyan {
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+}
+
+
+.typing-cursor {
+    border-right: 2px solid var(--accent-cyan);
+    animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: var(--accent-cyan);
+    }
+}
+
+
+.digital-rain {
+    position: absolute;
+    animation: rainDrop 3s linear infinite;
+}
+
+@keyframes rainDrop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+
+.terminal-window {
+    background: rgba(0, 0, 0, 0.9);
+    border: 1px solid #00ff41;
+    border-radius: 10px;
+    padding: 1rem;
+    font-family: 'Courier New', monospace;
+    color: #00ff41;
+}
+
+.terminal-line {
+    margin-bottom: 0.5rem;
+}
+
+.terminal-prompt {
+    color: #00ff41;
+    font-weight: bold;
+}
+
+.terminal-cursor {
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background: #00ff41;
+    animation: terminalBlink 1s infinite;
+}
+
+@keyframes terminalBlink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
